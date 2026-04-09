@@ -20,8 +20,12 @@
 
 #define CFG_SYS_HZ_CLOCK		1000000	/* Timer is clocked at 1MHz */
 
+#ifdef CONFIG_CMD_MMC
 #define BOOT_TARGET_DEVICES(func) \
 	func(MMC, mmc, 0)
+#else
+#define BOOT_TARGET_DEVICES(func)
+#endif
 
 #define STM32F746_BOARD_EXTRA_ENV \
 	"splashimage=0xC0448000\0" \

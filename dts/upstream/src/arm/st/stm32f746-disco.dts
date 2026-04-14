@@ -75,7 +75,7 @@
 	};
 
 	aliases {
-		serial0 = &usart1;
+		serial0 = &usart6;
 	};
 
 	leds {
@@ -201,8 +201,8 @@
 	/delete-node/timer@4;
 };
 
-&usart1 {
-	pinctrl-0 = <&usart1_pins_b>;
+&usart6 {
+	pinctrl-0 = <&usart6_pins_b>;
 	pinctrl-names = "default";
 	status = "okay";
 };

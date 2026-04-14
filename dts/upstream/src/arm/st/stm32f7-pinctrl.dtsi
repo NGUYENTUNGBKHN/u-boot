@@ -161,6 +161,19 @@
 				};
 			};
 
+			usart6_pins_b: usart6-1 {
+				pins1 {
+					pinmux = <STM32_PINMUX('C', 6, AF7)>; /* USART6_TX */
+					bias-disable;
+					drive-push-pull;
+					slew-rate = <0>;
+				};
+				pins2 {
+					pinmux = <STM32_PINMUX('C', 7, AF7)>; /* USART6_RX */
+					bias-disable;
+				};
+			};
+
 			i2c1_pins_b: i2c1-0 {
 				pins {
 					pinmux = <STM32_PINMUX('B', 9, AF4)>, /* I2C1 SDA */

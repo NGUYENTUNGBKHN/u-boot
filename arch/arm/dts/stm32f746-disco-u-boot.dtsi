@@ -161,16 +161,6 @@
 			bootph-all;
 		};
 	};
-
-	usart6_pins_b: usart6-1 {
-		bootph-all;
-		pins1 {
-			bootph-all;
-		};
-		pins2 {
-			bootph-all;
-		};
-	};
 };
 
 &pwrcfg {

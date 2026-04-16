@@ -361,7 +361,14 @@ void event_show_spy_list(void);
  * @type: Type to check
  * Return: Name of event, or "(unknown)" if not known
  */
+#if CONFIG_IS_ENABLED(EVENT)
 const char *event_type_name(enum event_t type);
+#else
+static inline const char *event_type_name(enum event_t type)
+{
+	return "(unknown)";
+}
+#endif
 
 /**
  * event_notify() - notify spies about an event

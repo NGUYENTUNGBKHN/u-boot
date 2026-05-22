@@ -161,6 +161,21 @@
 			bootph-all;
 		};
 	};
+
+	usart6_pins_a: usart6-0 {
+		bootph-all;
+		pins1 {
+			bootph-all;
+		};
+		pins2 {
+			bootph-all;
+		};
+	};
+};
+
+&usart6 {
+	bootph-all;
+	clocks = <&rcc 0 STM32F7_APB2_CLOCK(USART6)>;
 };
 
 &pwrcfg {

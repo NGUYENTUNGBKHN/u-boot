@@ -161,15 +161,15 @@
 				};
 			};
 
-			usart6_pins_b: usart6-1 {
+			usart6_pins_a: usart6-0 {
 				pins1 {
-					pinmux = <STM32_PINMUX('C', 6, AF7)>; /* USART6_TX */
+					pinmux = <STM32_PINMUX('C', 6, AF8)>; /* USART6_TX */
 					bias-disable;
 					drive-push-pull;
 					slew-rate = <0>;
 				};
 				pins2 {
-					pinmux = <STM32_PINMUX('C', 7, AF7)>; /* USART6_RX */
+					pinmux = <STM32_PINMUX('C', 7, AF8)>; /* USART6_RX */
 					bias-disable;
 				};
 			};
